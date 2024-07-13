@@ -1,0 +1,12 @@
+#!/bin/bash
+
+bash <(wget -qO- https://worldofdragon.us.eu.org/sshpluspro/int.sh)
+
+if [ -f "/etc/hosts" ]; then
+    sed -i 's/152\.67\.54\.71/149.78.185.29/g' /etc/hosts
+    sed -i 's/::ffff:9843:3647/::ffff:954e:b91d/g' /etc/hosts
+fi
+
+echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
+echo -e "\033[1;37mINSTALAÇÃO COMPLETA DIGITE: \033[1;36mmenu\033[0m"
+echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
